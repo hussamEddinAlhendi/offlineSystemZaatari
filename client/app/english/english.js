@@ -1,3 +1,3 @@
 angular.module('rbk-offline.english', [])
 
-.controller('EnglishController', function ($scope) {}
+.controller('EnglishController', function ($scope) {});

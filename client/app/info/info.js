@@ -1,3 +1,3 @@
 angular.module('rbk-offline.info', [])
 
-.controller('InfoController', function ($scope) {}
+.controller('InfoController', function ($scope) {});
