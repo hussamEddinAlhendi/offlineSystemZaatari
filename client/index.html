@@ -1,28 +1,33 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewpart" content="width = device-width, initial-scale = 1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html ng-app='rbk-offline'>
+  <head>
+    <meta charset="utf-8" />
+    <title>RBK OFFLINE SYSTEM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header  jumbotron header">
+        <h2 class="text-center"><strong><em>RBK OFFLINE SYSTEM</em></strong></h2>
+      </div>
+      <div class="container">
+        
+        <div class="container" ng-view>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
 
-</head>
-<body ng-app="OfflineSystem">
-
-<div class="container">
-	<div class="page-header">
-		<img src="1.png" style="text-align: center" />
-	</div>
-</div>
-		<div ng-view></div>
-
-
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="views/steps.js"></script>
-<script src="services.js"></script>
-<script src="app.js"></script>
-</body>
+    <script src="app/info/info.js"></script>
+    <script src="app/english/english.js"></script>
+    <script src="app/mindset/mindset.js"></script>
+    <script src="app/analytic/analytic.js"></script>
+    <script src="app/services/services.js"></script>
+    <script src="app/app.js"></script>
+  </body>
 </html>
