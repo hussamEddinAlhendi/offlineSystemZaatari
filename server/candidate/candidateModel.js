@@ -9,9 +9,9 @@ var CandidateSchema = new mongoose.Schema({
     type : String,
     required : true
   },
-  Gender : {
+  gender : {
     type : String
-  }
+  },
   email : {
     type : String,
     required : true
@@ -20,7 +20,7 @@ var CandidateSchema = new mongoose.Schema({
     type : String,
   },
   birthdate : {
-    type : String
+    type : Date
   },
   programmingExp : {
     type : Boolean  
@@ -36,5 +36,5 @@ var CandidateSchema = new mongoose.Schema({
   }
 });
 
-var Candidate = mongoose.model('Candidate', UserSchema);
+var Candidate = mongoose.model('Candidate', CandidateSchema);
 module.exports = Candidate;

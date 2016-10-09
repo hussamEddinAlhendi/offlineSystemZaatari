@@ -27,6 +27,7 @@
     "sequelize": "^3.24.3"
   },
   "devDependencies": {
+    "mongoose": "^4.5.8",
     "morgan": "^1.7.0"
   }
 }
